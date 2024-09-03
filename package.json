@@ -1,21 +1,10 @@
 {
   "name": "imagemin",
   "version": "9.0.0",
+  "repository": "iTechTiagoVelho/imagemin",
   "description": "Minify images seamlessly",
   "license": "MIT",
-  "repository": "iTechTiagoVelho/imagemin",
   "type": "module",
-  "exports": "./index.js",
-  "engines": {
-    "node": ">=18",
-    "pnpm": ">=9.4.0"
-  },
-  "scripts": {
-    "test": "xo && ava"
-  },
-  "files": [
-    "index.js"
-  ],
   "keywords": [
     "minify",
     "compress",
@@ -27,6 +16,20 @@
     "gif",
     "svg"
   ],
+  "engines": {
+    "node": ">=18",
+    "pnpm": ">=9.4.0"
+  },
+  "xo": {
+    "space": true
+  },
+  "exports": "./index.js",
+  "files": [
+    "index.js"
+  ],
+  "scripts": {
+    "test": "xo && ava"
+  },
   "dependencies": {
     "change-file-extension": "^0.1.1",
     "environment": "^1.0.0",
