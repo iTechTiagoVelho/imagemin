@@ -2,45 +2,10 @@
 
 > Minify images seamlessly
 
-<br>
-
----
-
-<div align="center">
-	<p>
-		<p>
-			<sup>
-				<a href="https://github.com/sponsors/sindresorhus">Sindre Sorhus' open source work is supported by the community</a>
-			</sup>
-		</p>
-		<sup>Special thanks to:</sup>
-		<br>
-		<br>
-		<a href="https://standardresume.co/tech">
-			<img src="https://sindresorhus.com/assets/thanks/standard-resume-logo.svg" width="180">
-		</a>
-		<br>
-		<br>
-		<a href="https://strapi.io/?ref=sindresorhus">
-			<div>
-				<img src="https://sindresorhus.com/assets/thanks/strapi-logo-white-bg.png" width="200" alt="Strapi">
-			</div>
-			<b>Strapi is the leading open-source headless CMS.</b>
-			<div>
-				<sup>It’s 100% JavaScript, fully customizable, and developer-first.</sup>
-			</div>
-		</a>
-	</p>
-</div>
-
----
-
-<br>
-
 ## Install
 
 ```sh
-npm install imagemin
+pnpm install imagemin
 ```
 
 ## Usage
@@ -51,13 +16,13 @@ import imageminJpegtran from 'imagemin-jpegtran';
 import imageminPngquant from 'imagemin-pngquant';
 
 const files = await imagemin(['images/*.{jpg,png}'], {
-	destination: 'build/images',
-	plugins: [
-		imageminJpegtran(),
-		imageminPngquant({
-			quality: [0.6, 0.8]
-		})
-	]
+  destination: 'build/images',
+  plugins: [
+    imageminJpegtran(),
+    imageminPngquant({
+      quality: [0.6, 0.8]
+    })
+  ]
 });
 
 console.log(files);
